@@ -78,12 +78,17 @@
             {
                 map = CreateMap(document.getElementById('map'));
                 map.AddMarker('Merda', Marker(44.6888768, 10.6594437), PageOpener('pages/prova1.html'))
+                map.AddMarker('Merda', {lat:4.6888768, lng:10.6594437}, PageOpener('pages/prova1.html'))
+                map.AddMarker('Tanzi', Marker(44.6890295,10.6637157), PageOpener('pages/padiglioni/tanzi.html'))
 			}
 			
 			var staticMap = CreateStaticMap(document.getElementById('staticMap'), 'images/static1.jpg')
 			staticMap.AddMarker({x:50, y:50}, PageOpener('pages/prova1.html'))
-			staticMap.AddMarker({x:10, y:80}, PageOpener('pages/prova1.html'))
-			staticMap.AddMarker({x:20, y:20}, PageOpener('pages/prova1.html'))
+			staticMap.AddMarker(RelativePosition(10, 80), PageOpener('pages/prova1.html'))
+			staticMap.AddMarker({x:20, y:20}, function()
+			{
+				window.location.href = 'pages/prova1.html'
+			})
         </script>
 	</body>
 </html>
