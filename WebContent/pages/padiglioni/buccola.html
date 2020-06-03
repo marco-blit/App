@@ -9,6 +9,7 @@
 		<title>Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="../../assets/css/main.css" />
 		<link rel="stylesheet" href="../../css/main.css" />
 		<link rel="stylesheet" href="../../css/map.css" />
 		<link rel="stylesheet" href="../../css/layout.css" />
@@ -16,24 +17,9 @@
 	</head>
 	
 	<body>
-		<!-- Menu -->
-		<nav class="navbar navbar-expand-lg">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			  <div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#">Features</a>
-				<a class="nav-item nav-link" href="#">Pricing</a>
-				<a class="nav-item nav-link" href="../../maps.html">Mappa</a>
-			  </div>
-			</div>
-		  </nav>
-
+				<div class="wrapper">
 				<!-- Main -->
-					<div id="main">
+					<div id="main menu-margin">
                         <div class="row">
                             <div class="col-sm">
                                 <img src="../../images/padiglioni/buccoland.jpg" class="img-responsive img-fluid" alt="Padiglione Buccola">
@@ -69,7 +55,64 @@
                                 </div>
                             </div>
                         </div>
-					</div>
+					</div><div id="sidebar">
+			<div class="inner bg-green">
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header>
+						<h2 style="font-family: Roboto Slab; font-weight: bold;">Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html"><font color="white">Home</font></a></li>
+						<li><span class="opener"><a href="../../maps.html"><font color="white">Padiglioni</font></a></span>
+						</li>
+						<li><a href="../../archivio.html"><font color="white">Archivi
+									e Biblioteche</font></a></li>
+						<li><a href="../../elements.html"><font color="white">News
+									e Eventi</font></a></li>
+						<li><a href="#"><font color="white">Area Riservata</font></a></li>
+					</ul>
+				</nav>
+
+
+
+				<!-- Section -->
+				<section>
+					<header class="content">
+						<h2 style="font-family: Roboto Slab;">Biblioteca Scientifica
+							Carlo Livi</h2>
+					</header>
+					<p>Contattaci su :</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a
+							href="biblioteca@ausl.re.it" style="font-family: Roboto Slab;">biblioteca@ausl.re.it</a></li>
+						<li class="icon solid fa-phone" style="font-family: Roboto Slab;">0522.335280
+							- 0522.335314</li>
+						<li class="icon solid fa-print" style="font-family: Roboto Slab;">Fax.
+							0522.335971</li>
+						<li class="icon solid fa-home"><a
+							href="https://www.ausl.re.it/biblioteca-scientifica-carlo-livi"
+							style="font-family: Roboto Slab;">Sede legale: via Amendola
+								2, 42122 <br> Reggio Emilia
+						</a></li>
+						<li class="icon solid fa-video"><a
+							href="https://www.youtube.com/results?search_query=livicarlo"
+							style="font-family: Roboto Slab;">YouTube</a></li>
+						<!--	 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope" </span></button> -->
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">
+						&copy; <a href="www.ausl.re.it">Ausl.Re.It </a> Design:Gruppo 10
+					</p>
+
+				</footer>
+</div>
+			</div>
+		</div>
 		
 		<script src="../../assets/js/jquery.min.js"></script>
 		<script src="../../assets/js/bootstrap.min.js"></script>		

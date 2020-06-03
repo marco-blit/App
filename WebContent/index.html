@@ -5,43 +5,314 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" href="css/map.css" />
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	</head>
-	
-	<body>
-		<!-- Menu -->
-		<nav class="navbar navbar-expand-lg">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			  <div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="#">Features</a>
-				<a class="nav-item nav-link" href="#">Pricing</a>
-				<a class="nav-item nav-link" href="maps.html">Mappa</a>
-			  </div>
-			</div>
-		  </nav>
+<head>
+<title>Home</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.button {
+	background-color: green;
+}
 
-				<!-- Main -->
-					<div id="main">
-                        
+.bg-green {
+	background-color: #008046;
+	color: white;
+}
+
+span {
+	margin-left: 1em;
+	color: #aaa;
+	font-size: 85%;
+}
+
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+
+.column:last-child {
+	padding-bottom: 60px;
+}
+
+.column:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.column div {
+	position: relative;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+
+.column div:first-child {
+	margin-left: 0;
+}
+
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+
+figure {
+	width: 350px;
+	height: 350px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+.hover11 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover11 figure:hover img {
+	opacity: .5;
+}
+
+.title {
+	padding: 0px 0px 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<h1>GRUPPO 10</h1>
+				</header>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div>
+						<header class="major">
+							<h1>Campus San Lazzaro</h1>
+							<p>A free and fully responsive site template</p>
+						</header>
+						<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu.
+							Proin aliquam facilisis ante interdum congue. Integer mollis,
+							nisl amet convallis, porttitor magna ullamcorper, amet egestas
+							mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id
+							euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor
+							sit nullam.</p>
+						<ul class="actions">
+							<li><a href="#" class="button big "><font color="white">Learn
+										More</font></a></li>
+						</ul>
 					</div>
-		
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>		
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-	</body>
+					<span class="image object"> <img src="images/pic10.jpg"
+						alt="" />
+					</span>
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Ipsum sed dolor</h2>
+					</header>
+					<div class="posts">
+						<!-- divide i vari articoli -->
+						<article>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+							<h3>Interdum aenean</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem
+								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
+								nulla amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li><a href="#" class="button"><font color="white">More</font></a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+							<h3>Nulla amet dolore</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem
+								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
+								nulla amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li><a href="#" class="button"><font color="white">More</font></a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+							<h3>Tempus ullamcorper</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem
+								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
+								nulla amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li><a href="#" class="button"><font color="white">More</font></a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+							<h3>Sed etiam facilis</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem
+								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
+								nulla amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li><a href="#" class="button"><font color="white">More</font></a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+							<h3>Feugiat lorem aenean</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem
+								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
+								nulla amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li><a href="#" class="button"><font color="white">More</font></a></li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+							<h3>Amet varius aliquam</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem
+								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
+								nulla amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li><a href="#" class="button"><font color="white">More</font></a></li>
+							</ul>
+						</article>
+
+					</div>
+				</section>
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/Ausl_RE"
+							class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/livicarlo"
+							class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a
+							href="https://www.youtube.com/channel/UC6PtGmvhd8eyY6S4xM5gKvQ?view_as=subscriber"
+							class="icon brands alt fab-youtube-f"><span class="label">YouTube</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span
+								class="label">Instagram</span></a></li>
+						<li><a href="biblioteca@ausl.re.it"
+							class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: Gruppo 10</li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner bg-green">
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header>
+						<h2 style="font-family: Roboto Slab; font-weight: bold;">Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html"><font color="white">Home</font></a></li>
+						<li><span class="opener"><a href="maps.html"><font color="white">Padiglioni</font></a></span>
+						</li>
+						<li><a href="archivio.html"><font color="white">Archivi
+									e Biblioteche</font></a></li>
+						<li><a href="elements.html"><font color="white">News
+									e Eventi</font></a></li>
+						<li><a href="#"><font color="white">Area Riservata</font></a></li>
+					</ul>
+				</nav>
+
+
+
+				<!-- Section -->
+				<section>
+					<header class="content">
+						<h2 style="font-family: Roboto Slab;">Biblioteca Scientifica
+							Carlo Livi</h2>
+					</header>
+					<p>Contattaci su :</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a
+							href="biblioteca@ausl.re.it" style="font-family: Roboto Slab;">biblioteca@ausl.re.it</a></li>
+						<li class="icon solid fa-phone" style="font-family: Roboto Slab;">0522.335280
+							- 0522.335314</li>
+						<li class="icon solid fa-print" style="font-family: Roboto Slab;">Fax.
+							0522.335971</li>
+						<li class="icon solid fa-home"><a
+							href="https://www.ausl.re.it/biblioteca-scientifica-carlo-livi"
+							style="font-family: Roboto Slab;">Sede legale: via Amendola
+								2, 42122 <br> Reggio Emilia
+						</a></li>
+						<li class="icon solid fa-video"><a
+							href="https://www.youtube.com/results?search_query=livicarlo"
+							style="font-family: Roboto Slab;">YouTube</a></li>
+						<!--	 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope" </span></button> -->
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">
+						&copy; <a href="www.ausl.re.it">Ausl.Re.It </a> Design:Gruppo 10
+					</p>
+
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
