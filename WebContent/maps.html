@@ -56,10 +56,16 @@
 					</header>
 					<ul>
 						<li><a href="index.html"><font color="white">Home</font></a></li>
-						<li><span class="opener"><a href="maps.html"><font color="white">Padiglioni</font></a></span>
+						<li><a href="maps.html"><font color="white">Padiglioni</font></a>
 						</li>
-						<li><a href="archivio.html"><font color="white">Archivi
-									e Biblioteche</font></a></li>
+						<li><span class="opener"><a href="#"><font color="white">Archivio
+									e Biblioteca</font></a></span>
+									<ul>
+												<li><a href="archivio.html">Archivio</a></li>
+												<li><a href="biblioteca.html">Biblioteca Scientifica</a></li>
+												
+									</ul>
+									</li>
 						<li><a href="elements.html"><font color="white">News
 									e Eventi</font></a></li>
 						<li><a href="#"><font color="white">Area Riservata</font></a></li>
@@ -124,23 +130,22 @@
         
         <script>
             var map
-            function initMap()
+            function initMap() 
             {
                 map = CreateMap(document.getElementById('map'));
-                map.AddMarker('Merda', Marker(44.6888768, 10.6594437), PageOpener('pages/prova1.html'))
-                map.AddMarker('Buccola', Marker(44.689154,10.6622485), PageOpener('pages/padiglioni/buccola.html'))
-                
-                map.AddMarker('Tanzi', Marker(44.6890295,10.6637157), PageOpener('pages/padiglioni/tanzi.html'))
+                map.AddMarker('Muro', Marker(44.6878954,10.6644024), PageOpener('pages/padiglioni/muro.html'))
+                map.AddMarker('Buccola', Marker(44.6876673,10.6667412), PageOpener('pages/padiglioni/buccola.html'))
+                map.AddMarker('Lombroso', Marker(44.6899656,10.6588984), PageOpener('pages/padiglioni/lombroso.html'))
+                map.AddMarker('Tanzi', Marker(44.6879443,10.6640177), PageOpener('pages/padiglioni/tanzi.html'))
+                map.AddMarker('Parco', Marker(44.689693,10.6621299), PageOpener('pages/padiglioni/parco.html'))
 			}
 			
 			var staticMap = CreateStaticMap(document.getElementById('staticMap'), 'images/static1.jpg')
-			staticMap.AddMarker({x:50, y:50}, PageOpener('pages/prova1.html'))
-			staticMap.AddMarker(RelativePosition(10, 80), PageOpener('pages/prova1.html'))
-			staticMap.AddMarker(RelativePosition(29, 35), PageOpener('pages/padiglioni/buccola.html'))
-			staticMap.AddMarker({x:20, y:20}, function()
-			{
-				window.location.href = 'pages/prova1.html'
-			})
+			staticMap.AddMarker({x:50, y:50}, PageOpener('pages/padiglioni/muro.html'))
+			staticMap.AddMarker(RelativePosition(77, 65), PageOpener('pages/padiglioni/tanzi.html'))
+			staticMap.AddMarker(RelativePosition(77, 47), PageOpener('pages/padiglioni/buccola.html'))
+		    staticMap.AddMarker({x:20, y:20}, function()
+			{window.location.href = 'pages/padiglioni/lombroso.html'}) 
         </script>
 	</body>
 </html>
