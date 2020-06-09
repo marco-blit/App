@@ -14,23 +14,128 @@
 		<link rel="stylesheet" href="css/map.css" />
 		<link rel="stylesheet" href="css/layout.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+				<link rel="stylesheet"
+		
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+.button {
+	background-color: green;
+}
+
+.bg-green {
+	background-color: #008046;
+	color: white;
+}
+
+span {
+	margin-left: 1em;
+	color: #aaa;
+	font-size: 85%;
+}
+
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+
+.column:last-child {
+	padding-bottom: 60px;
+}
+
+.column:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.column div {
+	position: relative;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+
+.column div:first-child {
+	margin-left: 0;
+}
+
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 350px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+
+figure {
+	width: 350px;
+	height: 350px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+.hover11 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover11 figure:hover img {
+	opacity: .5;
+}
+
+.title {
+	padding: 0px 0px 40px;
+}
+
+#header {
+	border-bottom: solid 5px #008046;
+}
+
+</style>
 	</head>
 	
 	<body>
 
 				<!-- Main -->
 					<div id="main">
+					<div class="inner"
+					<!-- Header -->
+				<header id="header">
+					<h1 style="font-family: Roboto Slab; font-weight: bold;">Campus San Lazzaro</h1>
+				</header>
+					<br>
                         <div class="row">
                             <div class="col-sm">
+                            
                                 <img src="images/biblioteca.jpg" class="img-responsive img-fluid" alt="Biblioteca Scientifica C.Livi">
                             </div>
                         </div>
                         <div class="container margin-bottom">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <h2 class="margin-vertical">Archivio</h2>
-                                </div>
-                            </div>
+
                             <div class="row">
                                 <div class="col-sm">
                                     <p>Il patrimonio archivistico del San Lazzaro è di importanza assoluta nel panorama italiano, poiché conserva una ricca testimonianza di ogni aspetto della vita e della gestione dell'ex Ospedale Psichiatrico S. Lazzaro. La serie principale è costituita dalle cartelle cliniche, di cui si può seguire l’evoluzione a partire dai primi esempi del XIX secolo. Il nostro archivio ha aderito al progetto ministeriale Carte da legare (link al progetto) e le cartelle verranno schedate tramite un software che consentirà diversi tipi di ricerca. La documentazione amministrativa consente invece di studiare il funzionamento dell’Ospedale Psichiatrico, poiché conserva i documenti relativi all’economato, alla Direzione, al patrimonio edilizio ecc. Lo studio delle cartelle cliniche più antiche ha portato alla pubblicazione di due volumi a cura di R. Panattoni, editi da Bruno Mondadori: “Lo sguardo psichiatrico. Studi e materiali dalle cartelle cliniche tra otto e novecento” (2009) e "Parole e immagini dal manicomio" (2011). Per informazioni sugli archivi di ex ospedali psichiatrici italiani si può consultare il relativo rapporto curato dal ministero (vai al rapporto); segnaliamo in particolare che la sezione su Reggio Emilia è alle p. 63 sg.
@@ -53,7 +158,7 @@
                                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <div class="card-body">
                                         <p>Per ricerche storiche è possibile consultare la documentazione amministrativa dell’ex Ospedale Psichiatrico e le cartelle cliniche chiuse da più di 70 anni. Modalità e orari: rivolgersi al personale della biblioteca, telefonicamente o via mail. Raccomandiamo di attenersi al Codice di deontologia e di buona condotta per i trattamenti di dati personali per scopi storici (vai al codice). Le cartelle cliniche chiuse da meno di 70 anni, in base alla normativa sulla privacy, sono consultabili solo dai diretti interessati, dagli eredi e dagli aventi diritto. Per informazioni e modalità di consultazione rivolgersi alla segreteria del Dipartimento di Salute Mentale, Pad. Valsalva (0522.335255). Per riprodurre immagini o documenti dell’archivio: inviare una richiesta via mail alla Segreteria del Direttore DSM-DP dr. Gaddomaria Grassi (direzionedsmdp@ausl.re.it), specificando le motivazioni (tesi di laurea, pubblicazione, documentario, articolo, etc.) e i dettagli delle immagini che si intendono riprodurre.
-                                        </p><img src="images/padiglioni/buccoland.jpg" class="img-responsive img-fluid" alt="Padiglione Buccola">
+                                        
                                     </div>
                                   </div>
                                 </div>
@@ -241,7 +346,7 @@ I circa 150 pezzi conservati in biblioteca sono stati catalogati dall'IBC e sono
 					</p>
 
 				</footer>
-
+				</div>
 			</div>
 		</div>
 					</div>
