@@ -18,6 +18,128 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
+#Twitter:hover {
+	color: rgba(29,161,242,1.00);
+}
+
+#Facebook:hover {
+	color: blue;
+}
+
+#Youtube:hover {
+	color: red;
+}
+
+#Instagram:hover {
+	color: purple;
+}
+
+#Mail:hover {
+	color: orange;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+.container-fluid {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+#id01 {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+#modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close1 {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close1:hover, .close1:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@
+-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes animatezoom {
+	from {transform: scale(0)
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
 .button {
 	background-color: green;
 }
@@ -137,99 +259,89 @@ figure:hover+span {
 				<!-- Banner -->
 				<section id="banner">
 					<div>
-						<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu.
-							Proin aliquam facilisis ante interdum congue. Integer mollis,
-							nisl amet convallis, porttitor magna ullamcorper, amet egestas
-							mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id
-							euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor
-							sit nullam.</p>
+						<p>Attualmente il complesso del San Lazzaro si estende, nella periferia sud est della città, su un'area di circa 390.000 mq, lungo la via Emilia verso Modena. L'intera area risulta delimitata rispetto al contesto urbano che la circonda da confini rimasti pressoché immutati nei secoli: a est il limite naturale costituito dal torrente Rodano, a nord la barriera invalicabile della linea ferroviaria Milano-Bologna, a ovest il limite flessibile, lungo il quale la struttura nel tempo si è estesa, ed a sud il confine storico sulla Via Emilia con l’accesso principale e gli edifici più antichi e prestigiosi.
+L'intero complesso si presenta come un grande parco, all'interno del quale sono dislocati edifici di varia tipologia ed epoca.
+Attualmente il comparto ospita in parte proprietà dell'Azienda Sanitaria Locale, tra cui la sede amministrativa, i poliambulatori e alcune strutture sanitarie, ed in parte funzioni universitarie, entro padiglioni acquistati dalla Provincia di Reggio Emilia e ristrutturati per le Facoltà di Agraria, di Ingegneria e di Medicina. Entro il padiglione Lombroso è ospitata, dal 2011, la sede del Museo di Storia della Psichiatria, mentre a febbraio 2015 è stato inaugurato lo studentato universitario ricavato in una parte della dismessa Villa Marchi.
+Una parte degli edifici appartenenti al patrimonio storico dell’Ausl - di cui alcuni di notevole pregio artistico - rimangono invece ancora in attesa del reperimento delle risorse per il loro recupero.</p>
 						<ul class="actions">
 							<li><a href="maps.html" class="button big "><font color="white">Scopri di più</font></a></li>
 						</ul>
 					</div>
-					<span class="image object"> <img src="images/pic10.jpg"
+					<span class="image object"> <img src="images/image3.jpg"
 						alt="" />
 					</span>
 				</section>
 
 				<!-- Section -->
 				<section>
-					<header class="major">
+					<header id="header">
 						<h2>Edifici e curiosità</h2>
 					</header>
+					<br>
 					<div class="posts">
 						<!-- divide i vari articoli -->
 						<article>
-							<a href="#" class="image"><img src="images/biblioteca.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="images/padiglioni/download.jpg" alt="" /></a>
 							<h3>Archivio</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
+							<p>Il patrimonio archivistico del San Lazzaro è di importanza assoluta nel panorama italiano, poiché conserva una ricca testimonianza di ogni aspetto della vita e della gestione dell'ex Ospedale Psichiatrico S. Lazzaro. La serie principale è costituita dalle cartelle cliniche, di cui si può seguire l’evoluzione a partire dai primi esempi del XIX secolo. Il nostro archivio ha aderito al progetto ministeriale Carte da legare (link al progetto) e le cartelle verranno schedate tramite un software che consentirà diversi tipi di ricerca. La documentazione amministrativa consente invece di studiare il funzionamento dell’Ospedale Psichiatrico, poiché conserva i documenti relativi all’economato, alla Direzione, al patrimonio edilizio ecc. Lo studio delle cartelle cliniche più antiche ha portato alla pubblicazione di due volumi a cura di R. Panattoni, editi da Bruno Mondadori: “Lo sguardo psichiatrico. Studi e materiali dalle cartelle cliniche tra otto e novecento” (2009) e "Parole e immagini dal manicomio" (2011). Per informazioni sugli archivi di ex ospedali psichiatrici italiani si può consultare il relativo rapporto curato dal ministero (vai al rapporto); segnaliamo in particolare che la sezione su Reggio Emilia è alle p. 63 sg.
+</p>
 							<ul class="actions">
 								<li><a href="archivio.html" class="button"><font color="white">Di più</font></a></li>
 							</ul>
 						</article>
 						
 						<article>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-							<h3>Biblioteca</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
+							<a href="#" class="image"><img src="images/biblioteca.jpg" alt="" /></a>
+							<h3>Biblioteca Scientifica "C. Livi"</h3>
+							<p>Nata negli anni 70 dell'800 come biblioteca dell'Ospedale psichiatrico San Lazzaro, la Biblioteca Scientifica Carlo Livi è oggi una biblioteca - corrente e storica - specializzata nelle discipline della mente. Il patrimonio librario conta oltre 15.000 volumi, di cui 13.000 moderni; le principali aree di interesse sono: psichiatria, psicologia, neuroscienze, pedagogia, dipendenze patologiche, scienze sociali. La biblioteca � abbonata a circa 130 periodici scientifici, italiani e stranieri; di molti è attivo anche l'accesso online. Il fondo storico conta oltre 700 periodici cessati, molti reperibili solo presso la Livi. Nel 2013 la biblioteca ha acquisito un ricco fondo di oltre 400 film sul tema del disagio mentale: parte di questi sono ammessi al prestito, altri sono visionabili in sede.</p>
 							<ul class="actions">
 								<li><a href="biblioteca.html" class="button"><font color="white">Scopri di più</font></a></li>
 							</ul>
 						</article>
 						
 						<article>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="images/padiglioni/buccoland.jpg" alt="" /></a>
 							<h3>Padiglione Buccola</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
+							<p>Situato all'interno di un campus in continuo miglioramento, garantisce formazione di altissimo livello, con percentuale assuntiva post-laurea da fare invidia a università meno recenti. Ottimi corsi e docenti molto preparati e competenti.</p>
+                                
 							<ul class="actions">
 								<li><a href="pages/padiglioni/buccola.html" class="button"><font color="white">Scopri di più</font></a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="images/padiglioni/tanzi-header.jpg" alt="" /></a>
 							<h3>Padiglione Tanzi</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
+							<p>Edificio ora adibito alla Medicina Legale.</p>
 							<ul class="actions">
 								<li><a href="pages/padiglioni/Tanzi.html" class="button"><font color="white">Scopri di più</font></a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="images/padiglioni/Lombroso 2012.jpg" alt="" /></a>
 							<h3>Padiglione Lombroso</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
+							<p>Museo della psichiatria in cui è possibile visitare le varie stanze di quello che in passato fu un manicomio. Numerosi i macchinari utilizzati, così come le varie attrezzature per la costruzione. Per le scolaresche c'è la possibilità di entrare in contatto con dei facilitatori, nuove figure professionali che fanno conoscere agli altri le proprie esperienze di malati psichiatrici.</p>
+                               
 							<ul class="actions">
 								<li><a href="pages/padiglioni/lombroso.html" class="button"><font color="white">Scopri di più</font></a></li>
 							</ul>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="images/billi.jpg" alt="" /></a>
 							<h3>Parco</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
+							<p>Il parco dell’ex ospedale, ha una superficie di oltre 35 ettari. All’interno della storica area verde
+sono inseriti una quarantina di fabbricati, diversi per dimensione, epoca di costruzione e tipologia
+architettonica.</p>
 							<ul class="actions">
 								<li><a href="pages/padiglioni/parco.html" class="button"><font color="white">Scopri di più</font></a></li>
 							</ul>
 						</article>
 						
 						<article>
-							<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="images/image2.jpg" alt="" /></a>
 							<h3>Muro</h3>
-							<p>Aenean ornare velit lacus, ac varius enim lorem
-								ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed
-								nulla amet lorem feugiat tempus aliquam.</p>
+							<p></p>
 							<ul class="actions">
-								<li><a href="pages/padiglioni/parco.html" class="button"><font color="white">Scopri di più</font></a></li>
+								<li><a href="pages/padiglioni/muro.html" class="button"><font color="white">Scopri di più</font></a></li>
 							</ul>
 						</article>
 
@@ -238,17 +350,22 @@ figure:hover+span {
 				<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="https://twitter.com/Ausl_RE"
-							class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/livicarlo"
-							class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a
+						<li><a id="Twitter" href="https://twitter.com/Ausl_RE"
+							class="icon-brand-button icon brands alt fa-twitter"><span
+								class="label">Twitter</span></a></li>
+						<li><a id="Facebook" href="https://www.facebook.com/livicarlo"
+							class="icon-brand-button icon brands alt fa-facebook-f"><span
+								class="label">Facebook</span></a></li>
+						<li><a id="Youtube"
 							href="https://www.youtube.com/channel/UC6PtGmvhd8eyY6S4xM5gKvQ?view_as=subscriber"
-							class="icon brands alt fab-youtube-f"><span class="label">YouTube</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span
+							class="icon-brand-button icon brands alt fa-youtube"><span
+								class="label">YouTube</span></a></li>
+						<li><a href="#" id="Instagram"
+							class="icon-brand-button icon brands alt fa-instagram"><span
 								class="label">Instagram</span></a></li>
-						<li><a href="biblioteca@ausl.re.it"
-							class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a id="Mail" href="biblioteca@ausl.re.it"
+							class="icon-brand-button icon solid alt fa-envelope"><span
+								class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li>
@@ -281,8 +398,10 @@ figure:hover+span {
 									</li>
 						<li><a href="elements.html"><font color="white">News
 									e Eventi</font></a></li>
-						<li><a href="#"><font color="white">Area Riservata</font></a></li>
-					</ul>
+						<li><a id="arearis" href="areariservata.html"
+							onclick="document.getElementById('id01').style.display='block'"><font
+								color="white">Area Riservata</font></a></li>
+								</ul>
 				</nav>
 
 
