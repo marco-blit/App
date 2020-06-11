@@ -18,385 +18,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<style>
-
-/* Modal Content */
-.modal-content-event {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-}
-
-/* The Close Button */
-.close {
-	color: #aaaaaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-.close:hover, .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.add_btn {
-	margin: 20px;
-	font-family: Roboto Slab;
-	font-size: 25px;
-}
-
-.bottoni_add {
-	margin: 20px;
-}
-
-footer {
-	position: absolute;
-	bottom: 0;
-}
-
-input[type=text], input[type=password] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-	text-align: center;
-	margin: 24px 0 12px 0;
-	position: relative;
-}
-
-.container-fluid {
-	padding: 16px;
-}
-
-span.psw {
-	float: right;
-	padding-top: 16px;
-}
-
-/* The Modal (background) */
-#id01 {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-	padding-top: 60px;
-}
-
-/* Modal Content/Box */
-#modal-content {
-	background-color: #fefefe;
-	margin: 5% auto 15% auto;
-	/* 5% from the top, 15% from the bottom and centered */
-	border: 1px solid #888;
-	width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close1 {
-	position: absolute;
-	right: 25px;
-	top: 0;
-	color: #000;
-	font-size: 35px;
-	font-weight: bold;
-}
-
-.close1:hover, .close1:focus {
-	color: red;
-	cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-	-webkit-animation: animatezoom 0.6s;
-	animation: animatezoom 0.6s
-}
-
-@
--webkit-keyframes animatezoom {
-	from {-webkit-transform: scale(0)
-}
-
-to {
-	-webkit-transform: scale(1)
-}
-
-}
-@
-keyframes animatezoom {
-	from {transform: scale(0)
-}
-
-to {
-	transform: scale(1)
-}
-
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-	span.psw {
-		display: block;
-		float: none;
-	}
-	.cancelbtn {
-		width: 100%;
-	}
-}
-
-.modal-img {
-	margin: 20px;
-	width: 350px;
-}
-
-.modal-h1 {
-	font-family: Roboto Slab;
-	font-weight: bold;
-	margin: 20px;
-}
-
-.modal-h2 {
-	font-family: Roboto Slab;
-	font-weight: bold;
-}
-
-.modal-p {
-	font-family: Roboto Slab;
-	font-size: 130%;
-}
-
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 20px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
-/* Modal Content */
-.modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-}
-
-/* The Close Button */
-.close {
-	color: #aaaaaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-.close:hover, .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-#photo {
-	position: absolute;
-	bottom: 0px;
-}
-
-.carousel-caption {
-	margin: auto;
-	height: absolute;
-	width: 320px;
-	margin-bottom: 35px;
-	padding-bottom: 15px;
-	padding-top: 15px;
-	background-color: rgba(255, 255, 255, 0.6);
-	border-top: 6px solid #504440;
-}
-
-.carouselTitle {
-	font-family: Roboto Slab;
-	font-weight: bold;
-	color: #504440;
-	margin-top: 0;
-}
-
-.carouselDescription {
-	font-family: Roboto Slab;
-	color: #504440;
-}
-
-.info-button {
-	font-size: 28px;
-	transition: transform .2s;
-	color: #008046;
-	display: inline-block;
-	vertical-align: middle;
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	transition-duration: 0.3s;
-	transition-property: transform;
-	outline: 0;
-}
-
-.info-button:hover {
-	transform: scale(1.1);
-	color: #008046;
-	text-decoration: none;
-}
-
-.icon-brand-button {
-	color: #008046;
-	transition: transform .2s;
-	display: inline-block;
-	vertical-align: middle;
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	transition-duration: 0.3s;
-	transition-property: transform;
-	outline: 0;
-}
-
-.icon-brand-button:hover {
-	transform: scale(1.1);
-	color: #008046;
-	text-decoration: none;
-}
-
-#header {
-	border-bottom: solid 5px #008046;
-}
-
-.sidebar {
-	margin: 0;
-	padding: 0;
-	position: fixed;
-	height: 100%;
-	overflow: auto;
-}
-
-.carousel-inner {
-	height: 400px;
-}
-
-.item {
-	height: 400px;
-}
-
-.button {
-	background-color: green;
-}
-
-.bg-green {
-	background-color: #008046;
-	color: white;
-}
-
-span {
-	margin-left: 1em;
-	color: #aaa;
-	font-size: 85%;
-}
-
-.column {
-	margin: 15px 15px 0;
-	padding: 0;
-}
-
-.column:last-child {
-	padding-bottom: 60px;
-}
-
-.column:after {
-	content: '';
-	clear: both;
-	display: block;
-}
-
-.column div {
-	position: relative;
-	float: left;
-	width: 350px;
-	height: 350px;
-	margin: 0 0 0 25px;
-	padding: 0;
-}
-
-.column div:first-child {
-	margin-left: 0;
-}
-
-.column div span {
-	position: absolute;
-	bottom: -20px;
-	left: 0;
-	z-index: -1;
-	display: block;
-	width: 350px;
-	margin: 0;
-	padding: 0;
-	color: #444;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	opacity: 0;
-}
-
-figure {
-	width: 350px;
-	height: 350px;
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
-}
-
-figure:hover+span {
-	bottom: -36px;
-	opacity: 1;
-}
-
-.hover11 figure img {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.hover11 figure:hover img {
-	opacity: .5;
-}
-
-.title {
-	padding: 0px 0px 40px;
-}
-</style>
+<link rel="stylesheet" href="css/main.css" />
 
 </head>
 
@@ -543,14 +165,28 @@ figure:hover+span {
 
 				<!-- Header -->
 				<header id="header">
-					<h1 style="font-family: Roboto Slab; font-weight: bold;">Area
-						riservata</h1>
+					<h1 style="font-family: Roboto Slab; font-weight: bold;">Area riservata</h1>
 				</header>
 				<div class="bottoni_add">
-					<span class="add_btn">Aggiungi notizia</span><a id="btn-news"
-						class="hvr-grow info-button fas fa-plus"></a><br> <br> <span
-						class="add_btn">Aggiungi evento</span><a id="btn-event"
-						class="hvr-grow info-button fas fa-plus"></a>
+					<form id="addForm" onsubmit="return MySubmit()">
+						<div class="form-group">
+						  <label for="title">Titolo</label>
+						  <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Titolo">
+						</div>
+						<div class="form-group">
+						  <label for="description">Descrizione</label>
+						  <input type="text" class="form-control" id="description" placeholder="Descrizione">
+						</div>
+						<div class="form-group">
+						  <label for="image">Url Immagine</label>
+						  <input type="text" class="form-control" id="image" placeholder="Url immagine">
+						</div>
+						<div class="form-group">
+						  <label for="date">Data</label>
+						  <input type="text" class="form-control" id="date" placeholder="Data">
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>		
 				</div>
 
 
@@ -664,68 +300,45 @@ figure:hover+span {
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="js/server.js"></script>
 
 	<script>
+		var url_string = window.location.href
+		var url = new URL(url_string);
+		var logged = url.searchParams.get("logged");
+		if(logged != "true")
+		{
+			window.location.href="login.html";
+		}
 		// Get the login modal
-		var modal_login = document.getElementById('id01');
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal_login) {
-				modal_login.style.display = "none";
-			}
-		}
-
-		// Get the modal
-		var modal = document.getElementById("news-modal");
-
-		// Get the button that opens the modal
-		var btn = document.getElementById("btn-news");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks the button, open the modal 
-		btn.onclick = function() {
-			modal.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
 		
-		// Get the modal
-		var modal1 = document.getElementById("event-modal");
+		function MySubmit()
+		{
+			const titleE = document.getElementById('title')
+			const descriptionE = document.getElementById('description');
+			const imageE = document.getElementById('image');
+			const dateE = document.getElementById('date');
+			const title = titleE.value;
+			const description = descriptionE.value;
+			const image = imageE.value;
+			const date = dateE.value;
 
-		// Get the button that opens the modal
-		var btn1 = document.getElementById("btn-event");
-		
-		// When the user clicks the button, open the modal 
-		btn1.onclick = function() {
-			modal1.style.display = "block";
-		}
-		
-		// Get the <span> element that closes the modal
-		var span1 = document.getElementsByClassName("close")[0];
-		
-		// When the user clicks on <span> (x), close the modal
-		span1.onclick = function() {
-			modal1.style.display = "none";
-		}
-		
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal1) {
-				modal1.style.display = "none";
-			}
+			SubmitFormAjax("http://localhost:8080/news/add", {title: title, description:description, image:image, date:date}, function(data)
+			{
+				if(data == "true")
+				{
+					window.location.href="areariservata.html?logged=true";
+				}
+				else
+				{
+					titleE.classList.add('is-invalid')
+					descriptionE.classList.add('is-invalid')
+					imageE.classList.add('is-invalid')
+					dateE.classList.add('is-invalid')
+				}
+			})
+
+			return false;
 		}
 	</script>
 
