@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+<title>Area Riservata</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Event Modal -->
+		<div id="event-modal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content-event">
+				<span class="close">&times;</span>
+				<div class="container">
+					<h2 style="font-family: Roboto Slab; font-weight: bold;">Nuovo evento</h2>
+					<br>
+					<form action="/action_page.php">
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="title">Inserisci titolo</label> <input type="text"
+								class="form-control" id="titolo" placeholder="Titolo"
+								name="titolo">
+						</div>
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="date">Inserisci data</label> <input type="date"
+								class="form-control" id="data" placeholder="Data"
+								name="data">
+						</div>
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="ora">Inserisci ora inizio evento</label> <input type="time"
+								class="form-control" id="ora-i" placeholder="Ora inizio"
+								name="ora-i">
+						</div>
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="ora">Inserisci ora fine evento</label> <input type="time"
+								class="form-control" id="ora-f" placeholder="Ora fine"
+								name="ora-f">
+						</div>
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="description">Aggiungi descrizione</label>
+							<textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="description">Aggiungi immagine di copertina</label> <br>
+							<a class="hvr-grow info-button fas fa-plus"></a>
+						</div>
+						<button type="submit" class="btn">Invia</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- News Modal -->
+		<div id="news-modal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content-event">
+				<span class="close">&times;</span>
+				<div class="container">
+					<h2 style="font-family: Roboto Slab; font-weight: bold;">Nuova
+						notizia</h2>
+					<br>
+					<form action="/action_page.php">
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="title">Inserisci titolo</label> <input type="text"
+								class="form-control" id="titolo" placeholder="Titolo"
+								name="titolo">
+						</div>
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="description">Aggiungi descrizione</label>
+							<textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<div class="form-group">
+							<label style="font-family: Roboto Slab; font-weight: bold;"
+								for="description">Aggiungi immagine di copertina</label> <br>
+							<a class="hvr-grow info-button fas fa-plus"></a>
+						</div>
+						<button type="submit" class="btn">Invia</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- The Login Modal -->
+
+		<div id="id01" class="modal">
+
+			<form id="modal-content" class="modal-content animate"
+				action="/action_page.php" method="post">
+				<div class="imgcontainer">
+					<span id="close"
+						onclick="document.getElementById('id01').style.display='none'"
+						class="close1" title="Close Modal">&times;</span>
+				</div>
+
+				<div class="container-fluid">
+					<label for="uname"><b>Username</b></label> <input type="text"
+						placeholder="Enter Username" name="uname" required> <label
+						for="psw"><b>Password</b></label> <input type="password"
+						placeholder="Enter Password" name="psw" required>
+
+					<button type="submit">Login</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h1 class="modal-h1">Dettagli evento</h1>
+				<img class="modal-img" src="images/1.jpg"
+					style="width: 50%; float: left;">
+				<h2 class="modal-h2">Data</h2>
+				<p class="modal-p">22/09/2020</p>
+				<br>
+				<h2 class="modal-h2">Ora inizio</h2>
+				<p class="modal-p">19:00</p>
+				<br>
+				<h2 class="modal-h2">Ora fine</h2>
+				<p class="modal-p">23:00</p>
+				<br>
+				<h2 class="modal-h2">Descrizione</h2>
+				<p class="modal-p"></p>
+				<br>
+			</div>
+
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<h1 style="font-family: Roboto Slab; font-weight: bold;">Area riservata</h1>
+				</header>
+				<div class="bottoni_add">
+					<form id="addForm" onsubmit="return MySubmit()">
+						<div class="form-group">
+						  <label for="title">Titolo</label>
+						  <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Titolo">
+						</div>
+						<div class="form-group">
+						  <label for="description">Descrizione</label>
+						  <input type="text" class="form-control" id="description" placeholder="Descrizione">
+						</div>
+						<div class="form-group">
+						  <label for="image">Url Immagine</label>
+						  <input type="text" class="form-control" id="image" placeholder="Url immagine">
+						</div>
+						<div class="form-group">
+						  <label for="date">Data</label>
+						  <input type="text" class="form-control" id="date" placeholder="Data">
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>		
+				</div>
+
+
+				<!-- Banner -->
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/Ausl_RE"
+							class="icon-brand-button icon brands alt fa-twitter"><span
+								class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/livicarlo"
+							class="icon-brand-button icon brands alt fa-facebook-f"><span
+								class="label">Facebook</span></a></li>
+						<li><a
+							href="https://www.youtube.com/channel/UC6PtGmvhd8eyY6S4xM5gKvQ?view_as=subscriber"
+							class="icon-brand-button icon brands alt fa-youtube"><span
+								class="label">YouTube</span></a></li>
+						<li><a href="#"
+							class="icon-brand-button icon brands alt fa-instagram"><span
+								class="label">Instagram</span></a></li>
+						<li><a href="biblioteca@ausl.re.it"
+							class="icon-brand-button icon solid alt fa-envelope"><span
+								class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: Gruppo 10</li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner bg-green">
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header>
+						<h2 style="font-family: Roboto Slab; font-weight: bold;">
+							Menu<img src="images/logos.jpg" style="width: 15%; float: right;">
+						</h2>
+
+					</header>
+					<ul>
+						<li><a href="index.html"><font color="white">Home</font></a></li>
+						
+						<li><span class="opener"><a href="maps.html"><font color="white">Padiglioni</font></a></span>
+						</li>
+						<li><a href="archivio.html"><font color="white">Archivi
+									e Biblioteche</font></a>
+									<ul>
+												<li><a href="archivio.html">Archivio</a></li>
+												<li><a href="biblioteca.html">Biblioteca Scientifica</a></li>
+												
+									</ul>
+									</li>
+						<li><a href="elements.html"><font color="white">News
+									e Eventi</font></a></li>
+						<li><a id="arearis" href="#"
+							onclick="document.getElementById('id01').style.display='block'"><font
+								color="white">Area Riservata</font></a></li>
+					</ul>
+				</nav>
+
+
+
+				<!-- Section -->
+				<section>
+					<header class="content">
+						<h2 style="font-family: Roboto Slab;">Biblioteca Scientifica
+							Carlo Livi</h2>
+					</header>
+					<p>Contattaci su :</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a
+							href="biblioteca@ausl.re.it" style="font-family: Roboto Slab;">biblioteca@ausl.re.it</a></li>
+						<li class="icon solid fa-phone" style="font-family: Roboto Slab;">0522.335280
+							- 0522.335314</li>
+						<li class="icon solid fa-print" style="font-family: Roboto Slab;">Fax.
+							0522.335971</li>
+						<li class="icon solid fa-home"><a
+							href="https://www.ausl.re.it/biblioteca-scientifica-carlo-livi"
+							style="font-family: Roboto Slab;">Sede legale: via Amendola
+								2, 42122 <br> Reggio Emilia
+						</a></li>
+						<li class="icon solid fa-video"><a
+							href="https://www.youtube.com/results?search_query=livicarlo"
+							style="font-family: Roboto Slab;">YouTube</a></li>
+						<!--	 <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope" </span></button> -->
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">
+						&copy; <a href="www.ausl.re.it">Ausl.Re.It </a> Design:Gruppo 10
+					</p>
+
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="js/server.js"></script>
+
+	<script>
+		var url_string = window.location.href
+		var url = new URL(url_string);
+		var logged = url.searchParams.get("logged");
+		if(logged != "true")
+		{
+			window.location.href="login.html";
+		}
+		// Get the login modal
+		
+		function MySubmit()
+		{
+			const titleE = document.getElementById('title')
+			const descriptionE = document.getElementById('description');
+			const imageE = document.getElementById('image');
+			const dateE = document.getElementById('date');
+			const title = titleE.value;
+			const description = descriptionE.value;
+			const image = imageE.value;
+			const date = dateE.value;
+
+			SubmitFormAjax("http://localhost:8080/news/add", {title: title, description:description, image:image, date:date}, function(data)
+			{
+				if(data == "true")
+				{
+					window.location.href="areariservata.html?logged=true";
+				}
+				else
+				{
+					titleE.classList.add('is-invalid')
+					descriptionE.classList.add('is-invalid')
+					imageE.classList.add('is-invalid')
+					dateE.classList.add('is-invalid')
+				}
+			})
+
+			return false;
+		}
+	</script>
+
+
+
+</body>
+</html>

@@ -18,244 +18,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<style>
-.modal-img {
-	margin: 20px;
-	width: 350px;
-}
-
-.modal-h1 {
-	font-family: Roboto Slab;
-	font-weight: bold;
-	margin: 20px;
-}
-
-.modal-h2 {
-	font-family: Roboto Slab;
-	font-weight: bold;
-}
-
-.modal-p {
-	font-family: Roboto Slab;
-	font-size: 130%;
-}
-
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 20px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.6);
-}
-
-/* Modal Content */
-.modal-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-}
-
-/* The Close Button */
-.close {
-	color: #aaaaaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-.close:hover, .close:focus {
-	color: #000;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-#photo {
-	position: absolute;
-	bottom: 0px;
-}
-
-.carousel-caption {
-	margin: auto;
-	height: absolute;
-	width: 320px;
-	margin-bottom: 35px;
-	padding-bottom: 15px;
-	padding-top: 15px;
-	background-color: rgba(255, 255, 255, 0.6);
-	border-top: 6px solid #504440;
-}
-
-.carouselTitle {
-	font-family: Roboto Slab;
-	font-weight: bold;
-	color: #504440;
-	margin-top: 0;
-}
-
-.carouselDescription {
-	font-family: Roboto Slab;
-	color: #504440;
-}
-
-.info-button {
-	font-size: 28px;
-	transition: transform .2s;
-	color: #008046;
-	display: inline-block;
-	vertical-align: middle;
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	transition-duration: 0.3s;
-	transition-property: transform;
-	outline: 0;
-}
-
-.info-button:hover {
-	transform: scale(1.1);
-	color: #008046;
-	text-decoration: none;
-}
-
-.icon-brand-button {
-	color: #008046;
-	transition: transform .2s;
-	display: inline-block;
-	vertical-align: middle;
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	transition-duration: 0.3s;
-	transition-property: transform;
-	outline: 0;
-}
-
-.icon-brand-button:hover {
-	transform: scale(1.1);
-	color: #008046;
-	text-decoration: none;
-}
-
-#header {
-	border-bottom: solid 5px #008046;
-}
-
-.sidebar {
-	margin: 0;
-	padding: 0;
-	position: fixed;
-	height: 100%;
-	overflow: auto;
-}
-
-.carousel-inner {
-	height: 400px;
-}
-
-.item {
-	height: 400px;
-}
-
-.button {
-	background-color: green;
-}
-
-.bg-green {
-	background-color: #008046;
-	color: white;
-}
-
-span {
-	margin-left: 1em;
-	color: #aaa;
-	font-size: 85%;
-}
-
-.column {
-	margin: 15px 15px 0;
-	padding: 0;
-}
-
-.column:last-child {
-	padding-bottom: 60px;
-}
-
-.column:after {
-	content: '';
-	clear: both;
-	display: block;
-}
-
-.column div {
-	position: relative;
-	float: left;
-	width: 350px;
-	height: 350px;
-	margin: 0 0 0 25px;
-	padding: 0;
-}
-
-.column div:first-child {
-	margin-left: 0;
-}
-
-.column div span {
-	position: absolute;
-	bottom: -20px;
-	left: 0;
-	z-index: -1;
-	display: block;
-	width: 350px;
-	margin: 0;
-	padding: 0;
-	color: #444;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	opacity: 0;
-}
-
-figure {
-	width: 350px;
-	height: 350px;
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
-}
-
-figure:hover+span {
-	bottom: -36px;
-	opacity: 1;
-}
-
-.hover11 figure img {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.hover11 figure:hover img {
-	opacity: .5;
-}
-
-.title {
-	padding: 0px 0px 40px;
-}
-</style>
+<link rel="stylesheet" href="css/main.css" />
 
 </head>
 
@@ -376,8 +139,8 @@ figure:hover+span {
 								<h2 style="font-family: Roboto Slab; font-weight: bold;">LISTA
 									EVENTI</h2>
 							</div>
-							<div class="row">
-								<div class="col-md-4 col-sm-6">
+							<div id="events" class="row">
+								<!--div class="col-md-4 col-sm-6">
 									<div class="hover11 column">
 										<div>
 											<figure>
@@ -419,7 +182,7 @@ figure:hover+span {
 										</div>
 
 									</div>
-								</div>
+								</div-->
 							</div>
 						</div>
 					</div>
@@ -428,20 +191,20 @@ figure:hover+span {
 				<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="https://twitter.com/Ausl_RE"
+						<li><a id="Twitter" href="https://twitter.com/Ausl_RE"
 							class="icon-brand-button icon brands alt fa-twitter"><span
 								class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/livicarlo"
+						<li><a id="Facebook" href="https://www.facebook.com/livicarlo"
 							class="icon-brand-button icon brands alt fa-facebook-f"><span
 								class="label">Facebook</span></a></li>
-						<li><a
+						<li><a id="Youtube"
 							href="https://www.youtube.com/channel/UC6PtGmvhd8eyY6S4xM5gKvQ?view_as=subscriber"
 							class="icon-brand-button icon brands alt fa-youtube"><span
 								class="label">YouTube</span></a></li>
-						<li><a href="#"
+						<li><a href="#" id="Instagram"
 							class="icon-brand-button icon brands alt fa-instagram"><span
 								class="label">Instagram</span></a></li>
-						<li><a href="biblioteca@ausl.re.it"
+						<li><a id="Mail" href="biblioteca@ausl.re.it"
 							class="icon-brand-button icon solid alt fa-envelope"><span
 								class="label">Email</span></a></li>
 					</ul>
@@ -480,7 +243,7 @@ figure:hover+span {
 									</li>
 						<li><a href="elements.html"><font color="white">News
 									e Eventi</font></a></li>
-						<li><a href="#"><font color="white">Area Riservata</font></a></li>
+						<li><a href="areariservata.html"><font color="white">Area Riservata</font></a></li>
 					</ul>
 				</nav>
 
@@ -531,6 +294,7 @@ figure:hover+span {
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="js/server.js"></script>
 
 	<script>
 		// Get the modal
@@ -566,9 +330,10 @@ figure:hover+span {
 				modal.style.display = "none";
 			}
 		}
+		GetNewsList(function(news)
+		{
+			document.getElementById("events").innerHTML = news;
+		});
 	</script>
-
-
-
 </body>
 </html>
