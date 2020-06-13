@@ -11,7 +11,6 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
-<link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script
@@ -19,6 +18,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" href="css/main.css" />
 
 </head>
 
@@ -153,13 +153,7 @@
 				<p class="modal-p">23:00</p>
 				<br>
 				<h2 class="modal-h2">Descrizione</h2>
-				<p class="modal-p">Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-					dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-					Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue
-					semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-					per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
+				<p class="modal-p"></p>
 				<br>
 			</div>
 
@@ -171,14 +165,28 @@
 
 				<!-- Header -->
 				<header id="header">
-					<h1 style="font-family: Roboto Slab; font-weight: bold;">Area
-						riservata</h1>
+					<h1 style="font-family: Roboto Slab; font-weight: bold;">Area riservata</h1>
 				</header>
 				<div class="bottoni_add">
-					<span class="add_btn">Aggiungi notizia</span><a id="btn-news"
-						class="hvr-grow info-button fas fa-plus"></a><br> <br> <span
-						class="add_btn">Aggiungi evento</span><a id="btn-event"
-						class="hvr-grow info-button fas fa-plus"></a>
+					<form id="addForm" onsubmit="return MySubmit()">
+						<div class="form-group">
+						  <label for="title">Titolo</label>
+						  <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Titolo">
+						</div>
+						<div class="form-group">
+						  <label for="description">Descrizione</label>
+						  <input type="text" class="form-control" id="description" placeholder="Descrizione">
+						</div>
+						<div class="form-group">
+						  <label for="image">Url Immagine</label>
+						  <input type="text" class="form-control" id="image" placeholder="Url immagine">
+						</div>
+						<div class="form-group">
+						  <label for="date">Data</label>
+						  <input type="text" class="form-control" id="date" placeholder="Data">
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>		
 				</div>
 
 
@@ -227,10 +235,10 @@
 					<ul>
 						<li><a href="index.html"><font color="white">Home</font></a></li>
 						
-						<li><a href="maps.html"><font color="white">Padiglioni</font></a>
+						<li><span class="opener"><a href="maps.html"><font color="white">Padiglioni</font></a></span>
 						</li>
-						<li><span class="opener"><a href="archivio.html"><font color="white">Archivi
-									e Biblioteche</font></a></span>
+						<li><a href="archivio.html"><font color="white">Archivi
+									e Biblioteche</font></a>
 									<ul>
 												<li><a href="archivio.html">Archivio</a></li>
 												<li><a href="biblioteca.html">Biblioteca Scientifica</a></li>
@@ -239,7 +247,9 @@
 									</li>
 						<li><a href="elements.html"><font color="white">News
 									e Eventi</font></a></li>
-						<li><a href="login.html"><font color="white">Area Riservata</font></a></li>
+						<li><a id="arearis" href="#"
+							onclick="document.getElementById('id01').style.display='block'"><font
+								color="white">Area Riservata</font></a></li>
 					</ul>
 				</nav>
 
@@ -290,68 +300,45 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="js/server.js"></script>
 
 	<script>
+		var url_string = window.location.href
+		var url = new URL(url_string);
+		var logged = url.searchParams.get("logged");
+		if(logged != "true")
+		{
+			window.location.href="login.html";
+		}
 		// Get the login modal
-		var modal_login = document.getElementById('id01');
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal_login) {
-				modal_login.style.display = "none";
-			}
-		}
-
-		// Get the modal
-		var modal = document.getElementById("news-modal");
-
-		// Get the button that opens the modal
-		var btn = document.getElementById("btn-news");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks the button, open the modal 
-		btn.onclick = function() {
-			modal.style.display = "block";
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
 		
-		// Get the modal
-		var modal1 = document.getElementById("event-modal");
+		function MySubmit()
+		{
+			const titleE = document.getElementById('title')
+			const descriptionE = document.getElementById('description');
+			const imageE = document.getElementById('image');
+			const dateE = document.getElementById('date');
+			const title = titleE.value;
+			const description = descriptionE.value;
+			const image = imageE.value;
+			const date = dateE.value;
 
-		// Get the button that opens the modal
-		var btn1 = document.getElementById("btn-event");
-		
-		// When the user clicks the button, open the modal 
-		btn1.onclick = function() {
-			modal1.style.display = "block";
-		}
-		
-		// Get the <span> element that closes the modal
-		var span1 = document.getElementsByClassName("close")[0];
-		
-		// When the user clicks on <span> (x), close the modal
-		span1.onclick = function() {
-			modal1.style.display = "none";
-		}
-		
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-			if (event.target == modal1) {
-				modal1.style.display = "none";
-			}
+			SubmitFormAjax("http://localhost:8080/news/add", {title: title, description:description, image:image, date:date}, function(data)
+			{
+				if(data == "true")
+				{
+					window.location.href="areariservata.html?logged=true";
+				}
+				else
+				{
+					titleE.classList.add('is-invalid')
+					descriptionE.classList.add('is-invalid')
+					imageE.classList.add('is-invalid')
+					dateE.classList.add('is-invalid')
+				}
+			})
+
+			return false;
 		}
 	</script>
 
