@@ -200,7 +200,7 @@ to {
 .carousel-caption {
 	margin: auto;
 	height: absolute;
-	width: 320px;
+	max-width: 320px;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -271,10 +271,6 @@ to {
 	position: fixed;
 	height: 100%;
 	overflow: auto;
-}
-
-.carousel-inner {
-	height: 400px;
 }
 
 .item {
@@ -561,7 +557,7 @@ to {
 .carousel-caption {
 	margin: auto;
 	height: absolute;
-	width: 320px;
+	max-width: 320px;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -634,9 +630,6 @@ to {
 	overflow: auto;
 }
 
-.carousel-inner {
-	height: 400px;
-}
 
 .item {
 	height: 400px;
@@ -828,7 +821,7 @@ span {
 .carousel-caption {
 	margin: auto;
 	height: absolute;
-	width: 320px;
+	max-width: 320px;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
 	padding-top: 15px;
