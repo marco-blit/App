@@ -24,10 +24,11 @@ function CreateMap(mapHTML)
 
 function CheckProximity()
 {
-    this.markers.forEach(marker => 
-    {
-        
-    })
+	this.markers.forEach(marker =>
+	{
+		
+	})
+	
 }
 function UpdatePos(position)
 {
