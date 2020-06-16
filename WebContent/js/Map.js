@@ -22,7 +22,14 @@ function CreateMap(mapHTML)
     return map
 }
 
-
+function CheckProximity()
+{
+	this.markers.forEach(marker =>
+	{
+		
+	})
+	
+}
 function UpdatePos(position)
 {
     this.userPos.setPosition(
