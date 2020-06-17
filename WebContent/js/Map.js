@@ -23,10 +23,7 @@ function CheckProximity()
 {this.markers.forEach(marker =>{})
 	}
 function UpdatePos(position)
-{
-    this.userPos.setPosition(
-        {lat: position.coords.latitude,
-            lng: position.coords.longitude})
+{this.userPos.setPosition({lat: position.coords.latitude, lng: position.coords.longitude})
 }
 function AddMarker(title, pos, click)
  {
