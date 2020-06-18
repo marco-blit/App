@@ -8,13 +8,13 @@
 	Database db = new Database();
 	List<News> news = db.ListNews();
 %>
-<!DOCTYPE html>
+<!--!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>News</title>
 </head>
-<body>
+<body-->
 	<% for(News n: news)
 	{%>
 		<div class="col-md-4 col-sm-6">
@@ -31,5 +31,5 @@
 			</div>
 		</div>
 	<% } %>
-</body>
-</html>
+<!--/body>
+</html-->
