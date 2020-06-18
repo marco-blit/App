@@ -21,7 +21,7 @@
 			<div class="hover11 column">
 				<div>
 					<figure>
-						<img class="img-responsive" src="<%= n.getImage() %>" style="width: 350px; height: 350px;">
+						<img class="img-responsive" src="<%= n.getImage() %>">
 					</figure>
 	
 					<span style="font-family: Roboto Slab; font-weight: bold;"><%= n.getTitle() %></span>

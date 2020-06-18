@@ -10,11 +10,11 @@
     <name>San Lazzaro</name>
 
     <description>
-        An app for the San Lazzaro ahahdfhd
+        An app for the San Lazzaro 
     </description>
 
     <author href="https://build.phonegap.com" email="support@phonegap.com">
-        Marco Caiumi
+        Gruppo 10
     </author>
 
     <plugin spec="https://github.com/apache/cordova-plugin-geolocation.git" source="git" />

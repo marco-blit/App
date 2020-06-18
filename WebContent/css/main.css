@@ -200,7 +200,7 @@ to {
 .carousel-caption {
 	margin: auto;
 	height: absolute;
-	width: 320px;
+	max-width: 320px;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -273,10 +273,6 @@ to {
 	overflow: auto;
 }
 
-.carousel-inner {
-	height: 400px;
-}
-
 .item {
 	height: 400px;
 }
@@ -311,14 +307,14 @@ span {
 	display: block;
 }
 
-.column div {
+/*.column div {
 	position: relative;
 	float: left;
 	width: 350px;
 	height: 350px;
 	margin: 0 0 0 25px;
 	padding: 0;
-}
+}*/
 
 .column div:first-child {
 	margin-left: 0;
@@ -343,8 +339,8 @@ span {
 }
 
 figure {
-	width: 350px;
-	height: 350px;
+	/*width: 350px;
+	height: 350px;*/
 	margin: 0;
 	padding: 0;
 	background: #fff;
@@ -561,7 +557,7 @@ to {
 .carousel-caption {
 	margin: auto;
 	height: absolute;
-	width: 320px;
+	max-width: 320px;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -634,9 +630,6 @@ to {
 	overflow: auto;
 }
 
-.carousel-inner {
-	height: 400px;
-}
 
 .item {
 	height: 400px;
@@ -672,14 +665,14 @@ span {
 	display: block;
 }
 
-.column div {
+/*.column div {
 	position: relative;
 	float: left;
 	width: 350px;
 	height: 350px;
 	margin: 0 0 0 25px;
 	padding: 0;
-}
+}*/
 
 .column div:first-child {
 	margin-left: 0;
@@ -704,8 +697,8 @@ span {
 }
 
 figure {
-	width: 350px;
-	height: 350px;
+	/*width: 350px;
+	height: 350px;*/
 	margin: 0;
 	padding: 0;
 	background: #fff;
@@ -828,7 +821,7 @@ span {
 .carousel-caption {
 	margin: auto;
 	height: absolute;
-	width: 320px;
+	max-width: 320px;
 	margin-bottom: 35px;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -935,14 +928,14 @@ span {
 	display: block;
 }
 
-.column div {
+/*.column div {
 	position: relative;
 	float: left;
 	width: 350px;
 	height: 350px;
 	margin: 0 0 0 25px;
 	padding: 0;
-}
+}*/
 
 .column div:first-child {
 	margin-left: 0;
@@ -967,8 +960,8 @@ span {
 }
 
 figure {
-	width: 350px;
-	height: 350px;
+	/*width: 350px;
+	height: 350px;*/
 	margin: 0;
 	padding: 0;
 	background: #fff;
@@ -1000,14 +993,14 @@ figure:hover+span {
     display: block;
 }
 
-.column div {
+/*.column div {
     position: relative;
     float: left;
     width: 350px;
     height: 350px;
     margin: 0 0 0 25px;
     padding: 0;
-}
+}*/
 
 .column div:first-child {
     margin-left: 0;
@@ -1032,8 +1025,8 @@ figure:hover+span {
 }
 
 figure {
-    width: 350px;
-    height: 350px;
+    /*width: 350px;
+    height: 350px;*/
     margin: 0;
     padding: 0;
     background: #fff;
